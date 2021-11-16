@@ -7,6 +7,9 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutusComponent } from './pages/aboutus/aboutus.component';
 import { ProductCardComponent } from './catalog/product-card/product-card.component';
+import { HeaderComponent } from './header/header.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CatalogComponent } from './pages/catalog/catalog.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +17,14 @@ import { ProductCardComponent } from './catalog/product-card/product-card.compon
     FooterComponent,
     HomeComponent,
     AboutusComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    HeaderComponent,
+    CatalogComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
